@@ -1,0 +1,16 @@
+# cmake_minimum_required(VERSION 2.6 FATAL_ERROR)                                    
+# project(3dclu)                                          
+# find_package(PCL 1.3 REQUIRED)                          
+# find_package(OpenCV REQUIRED)                             
+                                                       
+# include_directories(${PCL_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})                   
+# link_directories(${PCL_LIBRARY_DIRS})                   
+# add_definitions(${PCL_DEFINITIONS})                     
+# add_executable(3dclu main.cpp)
+# target_link_libraries(3dclu ${PCL_LIBRARIES} ${OpenCV_LIBS}) 
+
+add_subdirectory(down_sampling)
+add_subdirectory(GetDistance)
+add_subdirectory(ignore_cloud)
+add_subdirectory(locate)
+add_subdirectory(Lidar)
